@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript information</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <a href="#" class="logo">WebEra</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="infoH.html">HTML</a></li>
+            <li><a href="infoC.html">css</a></li>
+            <li><a href="infoJ.html">JavaScript</a></li>
+            <li><a href="editor.html">code Editor</a></li>
+            
+        </ul>
+    </header>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+
+        <section class="sidebar">
+            <ul>
+                <li><a href="#JSintro">JS Introduction</a> </li>
+                <li><a href="#function">JS Function</a> </li>
+                <li><a href="#objects">JS Objects</a> </li>
+                <li><a href="#methods">JS Methods</a></li>
+            </ul>
+        </section>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            
+            <div class="container">
+                 <!--intro section-->
+                <section id="JSintro">
+                    <h1>Javascript Introduction</h1>
+                    <p>JavaScript is a powerful ad flexible programming language.It can excuste an a web browser that allows us to make intractive webpages such as popup menus,animation,form validation,etc.</p>
+                    <br>
+                    <p>JavaScript has evolved a lot in the past decade.Our JavaScript tutorial will help you understand  the core concept of modern JavaScript.one step at a time</p>
+                    <hr>
+                </section>
+
+                <!--js function-->
+                <section id="function">
+                    <h2>JavaScript function</h2>
+                    <p>A function is a block of code that perform a spcific task.</p>
+                    <p>Suppose you need that to create a program to create a circleand color it.You can create two function to solve this problem:</p>
+                    <br>
+                    <ul type="circle">
+                        <li><b>a funtion to draw th circle</b></li>
+                        <li><b>a funtion to color th circle</b></li>
+                    </ul>
+                    <br>
+                    <p>JavaScript also has a huge nuber of inbuilt funtion.For example, (Math.sqrt()) is a funtion to calculate the square root of a number,</p>
+                    <br>
+                    <h4>Declaring a funtion</h4>
+                    <P> The syntax to delare a funtion is:</P>
+                        <p><pre>      funtion  nameoffuntion () {
+                                                //funtion body
+                                    }       
+                        </pre></p>
+                        <p> for  example,</p>
+                        //declaring a funton named greet()
+                        funton greet()  {
+                            console.log("Helloe there");
+                        }
+
+                        <h4>Calling a function</h4>
+                        <p>In the above program, we have declared a funtion named [greet()].
+                            To use that funtion, we need to sll it.
+                        </p>
+                            <br>
+                            <p>
+                                <pre> //program to print a text
+                                    //declring a function
+                                    funtion greet() {
+                                        console.log("Hello there")
+                                    }
+                                    //calling the funtion
+                                    greet();
+                                </pre>
+                            </p>
+                                <br>
+                        <h2>Benefits of using funton</h2>  
+                        <ul>
+                            <li>Function makes the code reusable.You can declare it one and use it multiple times.</li>
+                            <li>Function makes the program easier as each small task is divided into a function.</li>
+                            <li>funtion increase readibility.</li>
+                        </ul>
+
+
+                </section>
+                <!--js objects-->
+                <section id="objects">
+                    <h2>Javascript objects</h2>
+                    <p>JavaScript object is a non-primitve data-type that allows you to store multiple collection of data.</p>
+                    <br>
+                    <h4>for example</h4>
+                        <p>
+                            <pre>//object creation
+                                const person={
+                                    name: 'vanshika',
+                                    age:19
+                                };
+                            console.log(tyoeof person); //objet 
+                            </pre>
+                        </p>
+                        <br>
+                        <h3>JavaScript Object Declaration</h3>
+                        <ul>
+                            <li>
+                                <p>The syntax to declare an object is:</p>
+                                <br>
+                                <pre>const object_name = {
+                                    key1: value1,
+                                    key2: value2
+                                }</pre>
+                            </li>
+                            
+                        </ul>
+
+                        <h3>for example</h3>
+                        <p>
+                            <pre>// object creation
+                                const person = { 
+                                    name: 'John',
+                                    age: 20
+                                };
+                                console.log(typeof person); // object</pre>
+                        </p>
+                        <h2>JavaScript Object Properties</h2>
+                        <p>You can access the value of a property by using its key.</p>
+                        <br>
+                        <ul>
+                            <li>1. Using dot Notation</li>
+                            <li>
+                                <h3>for example</h3>
+                            </li>
+                            <li><pre>const person = { 
+                                name: 'John', 
+                                age: 20, 
+                            };
+                            
+                            // accessing property
+                            console.log(person.name); // John</pre>
+                        </li>
+                        </ul>
+                        <ul>
+                            <li>2. Using bracket Notation</li>
+                            <li>
+                                <h3>for example</h3>
+                            </li>
+                            <li><pre>const person = { 
+                                name: 'John', 
+                                age: 20, 
+                            };
+                            
+                            // accessing property
+                            console.log(person["name"]); // John</pre>
+                        </li>
+                        </ul>
+                </section>
+                <!-- js method-->
+                <section id="methods">
+                    <h2>JavaScript Methods </h2>
+                    <p>In this tutorial, you will learn about JavaScript object methods and this keyword with the help of examples.
+
+                        In JavaScript, objects can also contain functions</p>
+                    <br>
+                    <h3>for example</h3>
+                    <ul>
+                        <li>
+                            <pre>// object containing method
+                                const person = {
+                                    name: 'John',
+                                    greet: function() { console.log('hello'); }
+                                };</pre>
+                        </li>
+                    </ul>
+                    <p>In the above example, a person object has two keys (name and greet), which have a string value and a function value, respectively.</p>
+                    <p>Hence basically, the JavaScript method is an object property that has a function value.</p>
+                    <hr>
+                    <h2>Accessing Object Methods</h2>
+                    <p>You can access property by calling an objectName and a key. You can access a method by calling an objectName and a key for that method along with ().</p>
+                    <ul>
+                        <li>
+                            <pre>// accessing method and property
+                                const person = {
+                                    name: 'John',
+                                    greet: function() { console.log('hello'); }
+                                };
+                                
+                                // accessing property
+                                person.name; // John
+                                
+                                // accessing method
+                                person.greet(); // hello</pre>
+                        </li>
+                    </ul>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+     <!--footer-->
+<section id="contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+               <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  
+                    
+                </ul>
+            </div>    
+            <div class="list">
+                <h4>Support</h4>
+                 <ul>
+                     <li><a href="#">Email</a></li>
+                     <li><a href="#">Feedback</a></li>
+                     
+                 </ul>
+             </div>  
+             <div class="list">
+                <h4>Contact info</h4>
+                 <ul>
+                     <li><a href="#">98 West 21th street</a></li>
+                     <li><a href="#">New York NY 10016</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                     <li><a href="#">info@mydomain.com</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                 </ul>
+             </div> 
+             <div class="list">
+                <h4>Connect</h4>
+             <div class="social">
+             <a href="#"><i class='bx bxl-facebook'></i></a>
+             <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+             <a href="#"><i class='bx bxl-twitter'></i></a>
+             <a href="#"><i class='bx bxl-linkedin'></i></a>
+             </div>
+             </div>
+             </div> 
+        </div>
+    </div>
+    <div class="end-text">
+        <p>Copyright 02023 All rights reserved | Made with by Asha </p>
+    </div>
+
+</section>
+    <script src="scriptA.js"></script>
+
+</body>
+</html>

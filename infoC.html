@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css information</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <a href="#" class="logo">WebEra</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="infoH.html">HTML</a></li>
+            <li><a href="infoC.html">css</a></li>
+            <li><a href="infoJ.html">JavaScript</a></li>
+            <li><a href="editor.html">code Editor</a></li>
+            
+        </ul>
+    </header>
+    <hr>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+
+        <section class="sidebar">
+            <ul>
+                <li><a href="#cssintro">CSS Introduction</a> </li>
+                <li><a href="#comments">Comments</a> </li>
+                <li><a href="#css-type">Types of CSS</a> </li>
+            </ul>
+        </section>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            
+            <div class="container">
+                <section id="cssintro">
+                    <h2>CSS Introduction</h2>
+                    <p>Cascading Style Sheets (CSS) is a styling language used for styling a web page. It is a language that specifies how web documents (HTML, XML) are presented to users.</p>
+                    <p>CSS can change the color, size, and style of text, backgrounds, and links. It is indispensable for creating interesting layouts and enhancing user experience.</p>
+                    <p>For example, it can be used to create sidebars and ease navigation, among many other things. Hence, CSS is an essential component of web development, alongside HTML and JavaScript</p>
+                     
+                    <h2>CSS Syntax</h2>
+                    <p>The basic syntax of CSS includes 3 main parts:</p>
+                    <ul>
+                        <li><b>Selectors-</b> specifies the HTML element that we want to apply the styles</li>
+                        <li><b>Property-</b>specifies the attribute of HTML elements that we want to change (color, background, and so on)</li>
+                        <li><b>value-</b>specifies the new value you want to assign to the property (color of the text to red, background to gray, and so on)</li>
+                    </ul>
+                    <br>
+                    <h3>Let's take a example of css</h3>
+                    <code>
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;css example&lt;/title&gt;
+                                            &lt;style&gt;
+                                                 p{
+                                                    color:blue;
+                                                 }
+                                             &lt;/style&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                            &lt;p&gt;This is a simple text.&lt;/p&gt;
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                </code>
+                </section>
+                
+                <section id="comments">
+                    <h2>comments in css</h2>
+                    <p>  <pre>" /* this is comment in css */"</pre></p>
+                    <p>is a single line comment. It can be seen while reading the code but gets ignored by the browser during the rendering of the page.</p>
+                    <br>
+                    <p>We can also add a multiline comment on CSS. Simply by ending the comment in a different line.</p>
+                    <br><br>
+                    
+                    <h3>Why we use comments in css?</h3>
+                    <ul type="square">
+                        <li>Comments in code help the person reading the code understand what you were trying to do when you wrote it.</li>
+                       <br>
+                        <li>This makes it easier for other developers to understand the code and make changes if necessary.</li>
+                       <br>
+                        <li>Comments are also useful for anyone who needs to maintain the code in the future.</li>
+                    </ul>
+                    <hr>
+                
+                 </section>
+                 
+                 <section id="css-type">
+                    <h2>Include CSS in a webpage</h2>
+                    <p>CSS is used for styling the look and formatting of a document written in HTML. There are three ways to add CSS in HTML</p>
+                    <ul>
+                        <li><b>Inline CSS:</b>Styles added directly to the HTML element.</li>
+                        <li><b>Internal CSS:</b>Styles defined at the head section of the document.</li>
+                        <li><b>External CSS:</b>tyles defined in a separate file.</li>
+                    </ul>
+                     <br>
+                    <!--inline stye-->
+                    <h3>Inline Style</h3>
+                     <p>Inline style is the approach of adding CSS rules directly to the HTML element using the style attribute</p>
+                     <br>
+                     <code>
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                            &lt;title&gt;Browser&lt;/title&gt;
+                                            
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                            &lt;h1&gt;This is h1.&lt;/h1&gt;
+                                            &lt;p&gt;This paragraph doesn't have CSS..&lt;/p&gt;
+                                            &lt;p style="color:red"&gt;This paragraph is styled with inline CSS.&lt;/p&gt;
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                </code>
+                
+                       <h2>Internal CSS</h2>
+                        <p>Internal CSS applies CSS styles to a specific HTML document. Internal CSS is defined inside an HTML document</p>
+                        <br>
+                        <code>
+                            <pre>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                        &lt;style&gt;
+                                        p{
+                                           color:blue;
+                                        }
+                                    &lt;/style&gt;
+                                                &lt;title&gt;Browser&lt;/title&gt;
+                                                
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                                &lt;h1&gt;internal css example&lt;/h1&gt;
+                                                &lt;p&gt;This is paragraph1.&lt;/p&gt;
+                                                &lt;p&gt;This is paragraph2.&lt;/p&gt;
+                                                &lt;div&gt;This is content inside a div.&lt;/div&gt;
+                                        &lt;/body&gt;
+                                &lt;/html&gt;
+                            </pre>
+                    </code>
+                
+                    <br>
+                    <h2>external-css External CSS</h2>
+                    <p>External CSS is an approach to applying CSS styles to HTML pages by defining the CSS in a separate file.</p>
+                    <br> 
+                    <h3>Example: External CSS</h3>
+                     <ul>
+                        <li>
+                            <h5>style.css</h5>
+                              <pre>p {
+                                color: blue;
+                            }</pre>
+                
+                        </li>
+                        <li>Now, let's connect it with html file</li>
+                     </ul>
+                     <code>
+                        <pre>
+                            
+                            &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                             &lt;link href="style.css" rel="stylesheet"&gt;
+                                            &lt;title&gt;Browser&lt;/title&gt;
+                                            
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                            &lt;p&gt;This is a simple text.&lt;/p&gt;
+                                            
+                                    &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                </code>
+                
+                
+                </section>
+    
+            </div>
+            </div>
+        </div>
+
+        <!--footer-->
+<section id="contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+               <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  
+                    
+                </ul>
+            </div>    
+            <div class="list">
+                <h4>Support</h4>
+                 <ul>
+                     <li><a href="#">Email</a></li>
+                     <li><a href="#">Feedback</a></li>
+                     
+                 </ul>
+             </div>  
+             <div class="list">
+                <h4>Contact info</h4>
+                 <ul>
+                     <li><a href="#">98 West 21th street</a></li>
+                     <li><a href="#">New York NY 10016</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                     <li><a href="#">info@mydomain.com</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                 </ul>
+             </div> 
+             <div class="list">
+                <h4>Connect</h4>
+             <div class="social">
+             <a href="#"><i class='bx bxl-facebook'></i></a>
+             <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+             <a href="#"><i class='bx bxl-twitter'></i></a>
+             <a href="#"><i class='bx bxl-linkedin'></i></a>
+             </div>
+             </div>
+             </div> 
+        </div>
+    </div>
+    <div class="end-text">
+        <p>Copyright 02023 All rights reserved | Made with by Asha </p>
+    </div>
+
+</section>
+        <script src="scriptA.js"></script>
+
+</body>
+</html>

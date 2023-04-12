@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html information</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <a href="#" class="logo">WebEra</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="infoH.html">HTML</a></li>
+            <li><a href="infoC.html">css</a></li>
+            <li><a href="infoJ.html">JavaScript</a></li>
+            <li><a href="editor.html">code Editor</a></li>
+
+        </ul>
+    </header>
+    <hr>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+
+        <section class="sidebar">
+            <ul>
+                <li><a href="#htmlbasic">Html Basic</a> </li>
+                <li><a href="#htmltable">Html Tables</a> </li>
+                <li><a href="#htmllist">Html Lists</a> </li>
+                <li><a href="#htmlform">Html Form</a></li>
+            </ul>
+        </section>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            
+            <div class="container">
+                <section id="htmlbasic">
+                    <h2>HTML Basics</h2>
+                    <p>In this tutorial, you will learn about HTML and its implementation with the help of examples.
+
+                        HTML (HyperText Markup Language) is used to structure and format the content of websites on the
+                        World Wide
+                        Web.
+                        Web Developers use it to create a skeleton of modern websites and web apps.
+
+                    </p>
+                    <hr>
+                    <h2>What is HTML?</h2>
+                    <P>In simple words, HTML is the primary building block to create and structure website content. <br>
+                        Let's see what HyperText Markup Language means.</p>
+                    <ul type="square">
+                        <li>
+                            <h3>HyperText</h3>
+                            HyperText is a way of organizing text that allows the reader to easily navigate and access
+                            related
+                            information. It takes the reader to a different part of the same web page, or to a different
+                            web page
+                            altogether.
+                        </li>
+                        <li>
+                            <h3>Markup language</h3>
+                            A markup language is a computer language that is used to add structure and formatting to a
+                            text
+                            document. Markup languages use a system of tags to define the structure and content of a
+                            document. These
+                            tags are interpreted by a program or application to display the document in a specific way.
+                        </li>
+                    </ul>
+                    <hr>
+                    <h2>Example of HTML</h2>
+                    <p>Let's see a simple example of HTML.</p>
+                    <code>
+                                    <pre>
+                                        &lt;!DOCTYPE html&gt;
+                                        &lt;html&gt;
+                                                &lt;head&gt;
+                                                        &lt;title&gt;programiz&lt;/title&gt;
+                                                &lt;/head&gt;
+                                                &lt;body&gt;
+                                                        &lt;h1&gt;HTML Tutorial&lt;/h1&gt;
+                                                        &lt;p&gt;You'll learn about HTML.&lt;/p&gt;
+                                                &lt;/body&gt;
+                                        &lt;/html&gt;
+                                    </pre>
+
+                        </code>
+
+                    <h2>HTML Features</h2>
+                    <ul>
+                        <li>HTML is a standard language used for creating and structuring web pages. It allows for the
+                            organization
+                            of content using elements such as headings, paragraphs, lists, and tables. </li>
+                        <li>It supports a wide range of media types, including text, images, audio, and video, which
+                            makes web pages
+                            more engaging and interactive.</li>
+                        <li>HTML is a flexible language that can be used with other technologies, such as CSS and
+                            JavaScript, to add
+                            additional features and functionality to a web page</li>
+                        <li>Since HTML is compatible with all browsers, web pages created in HTML are displayed across a
+                            variety of
+                            platforms and devices.</li>
+                        <li>Furthermore, it is an open and standardized language, which is constantly being updated and
+                            improved by
+                            a community of developers and experts</li>
+                    </ul>
+                    <h2>Cons of HTML</h2>
+                    <ul>
+                        <li>text-based language, which can make it difficult to read and write</li>
+                        <li>may not be powerful enough to handle some of the more complex features found in modern web
+                            pages</li>
+                        <li>can be challenging to maintain and update over time</li>
+                    </ul>
+                </section>
+                <section id="htmltable">
+                    <h2>what is Table</h2>
+                    <p>
+                        In this tutorial, you will learn about HTML Table and its elements with the help of examples.
+                    </p>
+                    <p>
+                        The HTML table tag <br(<table>) is used to represent data in a structured way by creating a
+                            table. For
+                            example,
+                    </p>
+                    <code>
+                            <pre>
+                                &lt;table border="1"&gt;
+                                &lt;tr&gt;
+                                        &lt;th&gt;Name&lt;th&gt;
+                                        &lt;th&gt;Age&lt;th&gt;
+                                        &lt;th&gt;Country&lt;th&gt;
+                                 &lt;/tr&gt;  
+                                 &lt;tr&gt;      
+                                        &lt;th&gt;Harry depp&lt;th&gt;
+                                         &lt;th&gt;28&lt;th&gt;
+                                        &lt;th&gt;britian&lt;th&gt;
+                                 &lt;/tr&gt;  
+                                 &lt;tr&gt;      
+                                        &lt;th&gt;John smithp&lt;th&gt;
+                                         &lt;th&gt;35&lt;th&gt;
+                                        &lt;th&gt;usa&lt;th&gt;
+                                &lt;/tr&gt; 
+                                &lt;tr&gt;      
+                                        &lt;th&gt;Ram mrishan&lt;th&gt;
+                                        &lt;th&gt;19&lt;th&gt;
+                                        &lt;th&gt;Nepal&lt;th&gt;
+                                &lt;/tr&gt;    
+                                        
+                                &lt;/table&gt;
+                            </pre>
+                        </code>
+
+                    <ul type="square">
+                        <li>In the above example, Item and Count are table headers and they are used to represent the
+                            category of data
+                            in a particular row.
+                        </li>
+                        <li>Here, the styling of the table headers is bold and center-aligned. This is because the <th>
+                                tag has some
+                                default styling.
+                        </li>
+                    </ul>
+                    <h2>Table Cell <td> in HTML</h2>
+                    <p>The <td> tag is used to define table cells (data). The table cells store data to be displayed in
+                            the table.</p>
+
+                    <p>Table cells are generally inside the table row or table headers.</p>
+
+
+                    <h2>Table border</h2>
+                    <p>In HTML, the border attribute is used to add a border to a table and all the cells.</p>
+                    <hr>
+                </section>
+                <section id="htmllist">
+                    <h2>HTML list</h2>
+                    <p>In HTML, the border attribute is used to add a border to a table and all the cells.</p>
+                    <br>
+                    HTML lists are used to display related information in an easy-to-read and concise way as lists.
+                    <br>
+                    <h4>Three types of HTML lists</h4>
+                    <br>
+                    We can use three types of lists to represent different types of data in HTML:
+                    <br>
+                    <ol type="A">
+                        <li>ordered List</li>
+                        <li>unordred List</li>
+                        <li>Description List</li>
+                    </ol>
+                    <br>
+                    <h4>Let's take of example of ordered list</h4>
+                    <code>
+                                <pre>
+                                    &lt;ol&gt;
+                                            &lt;li&gt;ready&lt;li&gt;
+                                            &lt;li&gt;set&lt;li&gt;
+                                            &lt;li&gt;go&lt;li&gt;
+                                     &lt;/ol&gt;
+                                </pre>
+                            </code>
+                    <br>
+                    <h4>Let's take a example or unordered list</h4>
+                    <code>
+                                <pre>
+                                    &lt;ul&gt;
+                                            &lt;li&gt;Apple&lt;li&gt;
+                                            &lt;li&gt;Orange&lt;li&gt;
+                                            &lt;li&gt;graphes&lt;li&gt;
+                                     &lt;/ul&gt;
+                                </pre>
+                            </code>
+                    <br>
+                    <h3>Description list</h3>
+                    <p>The HTML description list is used to represent data in the name-value form. We use the
+                    <dl> tag to create a definition list and each item of the description list has two elements</p>
+                        <ul>
+                            <li>term/title - represented by the <dt> tag</li>
+                            <li>description of the term - represented by the <dd> tag</li>
+                        </ul>
+                        <h4>Let's a take a example of Description list</h4>
+                        <code>
+                                <pre>
+                                    &lt;dl&gt;
+                                            &lt;dd&gt;HTML&lt;dd&gt;
+                                            &lt;dt&gt;HYPERTEXT LINK MARKUP LANGUAGE&lt;dt&gt;
+                                            &ltdd&gt;CSS&lt;&gt;
+                                            &ltdt&gt;CASCADING STYLE SHEET&lt;dt&gt;
+                                     &lt;/dl&gt;
+                                </pre>
+                            </code>
+                </section>
+                <section id="htmlform">
+                    <h2>HTML form</h2>
+                    <ul>
+                        <li>In this tutorial, we will learn about forms in HTML with the help of examples.</li>
+                        <li>An HTML Form is a section of the document that collects input from the user. The input from
+                            the user is generally sent to a server (Web servers, Mail clients, etc). We use the HTML
+                            <form> element to create forms in HTML.
+
+                        </li>
+                    </ul>
+                    <h4>example of simpe form</h4>
+                    <img src="https://www.programiz.com/sites/tutorial2program/files/html-form-example.png"
+                        alt="form image">
+                    <br>
+                    <h2> Form Attributes</h2>
+                    <p><b>The HTML</b>
+                    <form> element contains several attributes for controlling data submission. They are as follows:</p>
+                        <br>
+                        <ul>
+                            <li>
+                                <h3>Action</h3>
+                                The action attributes define the action to be performed when the form is submitted.<br>
+                                It is usually the url for the server where the form data is to be sent.
+                            </li>
+                            <br>
+                            <li>
+                                <h3>Method</h3>
+                                The method attribute defines the HTTP method to be used when the form is submitted.<br>
+                                There are 3 possible values for the method attribute:
+                            </li>
+                            <ul>
+                                <li>post - It is used to send data to a server to update a resource.</li>
+                                <li>get: It is used to request data from a specified resource.</li>
+                            </ul>
+                        </ul>
+                        <h2>GetVSPost</h2>
+                        <h4Get< /h4>
+                            <p>Data sent with the GET method is visible in the URL.</p>
+                            <p>GET requests can be bookmarked.</p>
+                            <p>GET requests can be cached.</p>
+                            <p>GET requests have a character limit of 2048 characters.</p>
+                            <p>Only ASCII characters are allowed in GET requests.</p>
+                            <div class="difference">
+                                <h4>Post</h4>
+                                <p>Data sent with the POST method is not visible.</p>
+                                <p>POST requests can't be bookmarked.</p>
+                                <p>POST requests can't be cached.</p>
+                                <p>POST requests do not have a limit.</p>
+                                <p>All data is allowed in POST request</p>
+                            </div>
+                </section>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!--home section-->
+    <!--footer-->
+<section id="contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+               <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  
+                    
+                </ul>
+            </div>    
+            <div class="list">
+                <h4>Support</h4>
+                 <ul>
+                     <li><a href="#">Email</a></li>
+                     <li><a href="#">Feedback</a></li>
+                     
+                 </ul>
+             </div>  
+             <div class="list">
+                <h4>Contact info</h4>
+                 <ul>
+                     <li><a href="#">98 West 21th street</a></li>
+                     <li><a href="#">New York NY 10016</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                     <li><a href="#">info@mydomain.com</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                 </ul>
+             </div> 
+             <div class="list">
+                <h4>Connect</h4>
+             <div class="social">
+             <a href="#"><i class='bx bxl-facebook'></i></a>
+             <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+             <a href="#"><i class='bx bxl-twitter'></i></a>
+             <a href="#"><i class='bx bxl-linkedin'></i></a>
+             </div>
+             </div>
+             </div> 
+        </div>
+    </div>
+    <div class="end-text">
+        <p>Copyright 02023 All rights reserved | Made with by Asha </p>
+    </div>
+
+</section>
+    <script src="scriptA.js"></script>
+
+</body>
+
+</html>

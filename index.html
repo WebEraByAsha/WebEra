@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learing class</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleA.css">
+
+
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <a href="#" class="logo">WebEra</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="infoH.html">HTML</a></li>
+            <li><a href="infoC.html">css</a></li>
+            <li><a href="infoJ.html">JavaScript</a></li>
+            <li><a href="editor.html">code Editor</a></li>
+            
+        </ul>
+    </header>
+    <!--home section-->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>The Best Courses You<br>Will Find Here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Reiciendis architecto quisquam est, iusto
+                illum molestiae tempora aspernatur maiores eius repellendus sit eos,<br>explicabo obcaecati numquam, in
+                quia voluptate corrupti aliquid?</p>
+            <a href="#courses" class="home-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!--container-->
+    <section class="container" id="courses">
+        <div class="text">
+            <h2>Gateway of your success:courses</h2>
+        </div>
+        <div class="row-items">
+            <div class="container-box">
+                <div class="container-img">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQSqHU0cjvcpsOZRVAiUBxZ47N1v_7v4Wpx69tV3UQw&usqp=CAU&ec=48665701">
+                    <h4>Learn</h4>
+                    <p>HTML</p>
+                    <a href="infoH.html"><input type="button" value="Start Learing"></a>
+                </div>
+            </div>
+
+            <div class="container-box">
+                <div class="container-img">
+                    <img
+                        src="data:image/png;base64,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">
+
+                    <h4>Learn</h4>
+                    <p>CSS</p>
+                    <a href="infoC.html"><input type="button" value="Start Learing"></a>
+                </div>
+            </div>
+            <div class="container-box">
+                <div class="container-img">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIHGvwQQsok2Gtvtfaui1bwLf-FeQghPn7lSs4cxgMTQ&usqp=CAU&ec=48665701">
+
+                    <h4>Learn</h4>
+                    <p>javascript</p>
+                    <input type="button" value="Start Learing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--choose us -->
+    <div class="feat bg-gray pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="section-head col-sm-12">
+            <h4><span>Why Choose</span> Us?</h4>
+            <p>When you choose us, you'll feel the benefit of 10 years' experience of Web Development. Because we know the digital world and we know that how to handle it. With working knowledge of online, SEO and social media.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+              <h6>Modern Design</h6>
+              <p>We use latest technology for the latest world because we know the demand of peoples.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-anchor"></i></span>
+              <h6>Creative Design</h6>
+              <p>We are always creative and and always lisen our costomers and we mix these two things and make beast design.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+              <h6>24 x 7 User Support</h6>
+              <p>If our customer has any problem and any query we are always happy to help then.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
+              <h6>Business Growth</h6>
+              <p>Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you're climbing it</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
+              <h6>Market Strategy</h6>
+              <p>Holding back technology to preserve broken business models is like allowing blacksmiths to veto the internal combustion engine in order to protect their horseshoes.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
+              <h6>Affordable cost</h6>
+              <p>Love is a special word, and I use it only when I mean it. You say the word too much and it becomes cheap.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <!--review section-->
+    <section>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+          <h3 class="mb-4">Our reviews</h3>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+            numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+            quisquam eum porro a pariatur veniam.
+          </p>
+        </div>
+      </div>
+    
+      <div class="row text-center d-flex align-items-stretch">
+        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+          <div class="card testimonial-card">
+            <div class="card-up" style="background-color: #9d789b;"></div>
+            <div class="avatar mx-auto bg-white">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                class="rounded-circle img-fluid" />
+            </div>
+            <div class="card-body">
+              <h4 class="mb-4">Maria Smantha</h4>
+              <hr />
+              <p class="dark-grey-text mt-4">
+                <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet eos adipisci,
+                consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+          <div class="card testimonial-card">
+            <div class="card-up" style="background-color: #7a81a8;"></div>
+            <div class="avatar mx-auto bg-white">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                class="rounded-circle img-fluid" />
+            </div>
+            <div class="card-body">
+              <h4 class="mb-4">Lisa Cudrow</h4>
+              <hr />
+              <p class="dark-grey-text mt-4">
+                <i class="fas fa-quote-left pe-2"></i>Neque cupiditate assumenda in maiores
+                repudi mollitia architecto.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 d-flex align-items-stretch">
+          <div class="card testimonial-card">
+            <div class="card-up" style="background-color: #6d5b98;"></div>
+            <div class="avatar mx-auto bg-white">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                class="rounded-circle img-fluid" />
+            </div>
+            <div class="card-body">
+              <h4 class="mb-4">John Smith</h4>
+              <hr />
+              <p class="dark-grey-text mt-4">
+                <i class="fas fa-quote-left pe-2"></i>Delectus impedit saepe officiis ab
+                aliquam repellat rem unde ducimus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+
+  <!--footer-->
+<section id="contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+               <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  
+                    
+                </ul>
+            </div>    
+            <div class="list">
+                <h4>Support</h4>
+                 <ul>
+                     <li><a href="#">Email</a></li>
+                     <li><a href="#">Feedback</a></li>
+                     
+                 </ul>
+             </div>  
+             <div class="list">
+                <h4>Contact info</h4>
+                 <ul>
+                     <li><a href="#">98 West 21th street</a></li>
+                     <li><a href="#">New York NY 10016</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                     <li><a href="#">info@mydomain.com</a></li>
+                     <li><a href="#">+1(123)-456-7890</a></li>
+                 </ul>
+             </div> 
+             <div class="list">
+                <h4>Connect</h4>
+             <div class="social">
+             <a href="#"><i class='bx bxl-facebook'></i></a>
+             <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+             <a href="#"><i class='bx bxl-twitter'></i></a>
+             <a href="#"><i class='bx bxl-linkedin'></i></a>
+             </div>
+             </div>
+             </div> 
+        </div>
+    </div>
+    <div class="end-text">
+        <p>Copyright 02023 All rights reserved | Made with by Asha </p>
+    </div>
+
+</section>
+<script src="scriptA.js"></script>
+</body>
+
+</html>
